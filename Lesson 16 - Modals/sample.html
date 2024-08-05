@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Ninja Pro - the Book</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      section {
+        padding: 60px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Modal Sample -->
+    <div class="container text-center bg-secondary p-5">
+      <button
+        class="btn btn-danger"
+        data-bs-target="#modal-sample"
+        data-bs-toggle="modal"
+      >
+        Click Me to open Modal
+      </button>
+    </div>
+
+    <!-- Main Modal -->
+    <div
+      class="modal fade"
+      id="modal-sample"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Modal Title Here</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="d-block mx-auto"
+              src="../assets/ebook-cover.png"
+              alt=""
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              aliquam, consectetur saepe deleniti laboriosam enim veniam non,
+              sapiente eos libero deserunt fugit ducimus cum quos debitis iure
+              quaerat consequatur eveniet. Iste illo consequatur eligendi
+              inventore repudiandae. Vero quis deserunt aperiam ducimus maiores,
+              error provident consectetur praesentium aut ipsa consequatur optio
+              ipsum debitis eligendi earum cupiditate eaque labore delectus
+              beatae voluptatem laboriosam reiciendis id ratione excepturi?
+              Nostrum est molestiae doloremque commodi error harum hic,
+              distinctio facilis amet ullam, voluptates ex quidem totam fugiat
+              libero. Quis sapiente tempore numquam odio non quidem dolore culpa
+              temporibus eligendi mollitia, id voluptatum magnam quisquam nisi!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
+  </body>
+</html>
